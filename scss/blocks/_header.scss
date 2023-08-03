@@ -1,0 +1,75 @@
+.header {
+    min-height: 695px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $dark;
+    background-image: url('./../img/header/header-bg.png');
+    background-position: center, center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    @include mediaPhone {
+        min-height: unset;
+    }
+}
+.header-wrapper {
+    color: $white;
+    max-width: 630px;
+    text-align: center;
+    
+}
+.header__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    & strong {
+        font-size: 60px;
+
+        & em {
+            font-style: normal;
+            color: $light-blue;
+        }
+    }
+    @include mediaTablet {
+        font-size: 30px;
+        & strong {
+            font-size: 40px;
+        }
+    }
+}
+.header__suptitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 40px;
+
+    & p + p {
+        margin-top: 1em;
+    }
+}
+.header__btn {
+    display: inline-block;
+    height: 48px;
+    border-radius: 5px;
+    background-color: $light-blue;
+
+    color: $white;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 28px;
+
+    transition: opacity .2s ease-in, top .2s ease-in;
+
+    &:hover {
+        opacity: .8;
+    }
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}

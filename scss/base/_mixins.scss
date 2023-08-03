@@ -1,0 +1,10 @@
+@mixin mediaPhone {
+    @media screen and (max-width: 620px) {
+        @content;
+    }
+}
+@mixin mediaTablet {
+    @media screen and (max-width: 1000px) {
+        @content;
+    }
+}
